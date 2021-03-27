@@ -1,0 +1,18 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #F2F2F8;
+}
+
+h1 {
+    font-family: "Dosis", sans-serif;
+}
+
+label {
+    font-family: 'Titillium Web', sans-serif;   
+}

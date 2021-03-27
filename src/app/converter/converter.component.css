@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap');
+
+h1 {
+    text-align: center;
+    padding: 15px;
+    margin-top: 25px;
+}
+
+
+.form {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.label {
+    font-size: 20px;
+    font-family: "Titillium Web" ,sans-serif;
+    font-weight: 400;
+}
+
+.option {
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.label2 {
+    margin-left: 15px;
+}
+
+.convert {
+    font-family: "Dosis", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #181D27;
+    border: #181D27;
+    color: #24BC6E;
+
+
+}
+
+h2 {
+    font-family: "Titillium Web" ,sans-serif;
+}
+
+.numbers {
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    background-color: #181D27;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    
+}
+
+.numpad {
+    width: 25%;
+    height: 75px;
+    font-size: 25px;
+    border-radius: 50px;
+    margin: 5px;
+    background-color: #24BC6E;
+    border-color: #24BC6E;
+    color: #181D27;
+}
+
+.decimal {
+    font-size: 35px;
+}

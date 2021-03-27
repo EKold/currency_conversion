@@ -1,0 +1,41 @@
+<div *ngIf="conversion">
+    <div>
+        <h1>Convert your currency using the form below</h1>
+        <div class="form">
+            <label class="label">From: </label>
+            <select class="option" [(ngModel)]="from" (change)="load_conversions()">
+                <option *ngFor="let currency of get_currencies()" [value]="currency">{{currency}}</option>
+            </select>
+            <label class="label label2">To: </label>
+            <select class="option" [(ngModel)]="to">
+                <option *ngFor="let currency of get_currencies()" [value]="currency">{{currency}}</option>
+            </select>
+            <br><br>
+            <button class="convert" (click)="convert()">Convert</button>
+            <h2 class>{{amount_str}} in {{from}} = {{final_amount_str}} in {{to}}</h2>
+        </div>
+    </div>
+    <div class="numbers">
+        <div class="toprow">
+            <button class="numpad" (click)="add_to_num('7')">7</button>
+            <button class="numpad" (click)="add_to_num('8')">8</button>
+            <button class="numpad" (click)="add_to_num('9')">9</button>
+        </div>
+        <div class="toprow">
+            <button class="numpad" (click)="add_to_num('4')">4</button>
+            <button class="numpad" (click)="add_to_num('5')">5</button>
+            <button class="numpad" (click)="add_to_num('6')">6</button>
+        </div>
+        <div class="toprow">
+            <button class="numpad" (click)="add_to_num('1')">1</button>
+            <button class="numpad" (click)="add_to_num('2')">2</button>
+            <button class="numpad" (click)="add_to_num('3')">3</button>
+        </div>
+        <div class="toprow">
+            <button class="numpad decimal" (click)="add_to_num('.')">.</button>
+            <button class="numpad" (click)="add_to_num('0')">0</button>
+            <button class="numpad" (click)="remove_all()">clear</button>
+        </div>
+    </div>
+</div>
+
